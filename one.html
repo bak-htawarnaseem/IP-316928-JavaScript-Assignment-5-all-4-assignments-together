@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="one()">Question # 01</button>
+    <button onclick="two()">Question # 02</button>
+    <button onclick="three()">Question # 03</button>
+    <button onclick="four()">Question # 04</button>
+    <button onclick="eleven()">Question # 11</button>
+    <button onclick="twelve()">Question # 12</button>
+    <button onclick="fourteen()">Question # 14</button>
+    <button onclick="eighteen()">Question # 18 in console</button>
+    <script>
+        //if , if else , else , switch statements
+        // Question # 1
+        function one(){
+            let number = prompt("enter any number to check weather it is divisable by 3 or not");
+        if(number % 3 === 0){
+            alert("Entered number is divisable by 3");
+        }
+        else if(number % 3 !== 0){
+            alert("Entered number is not divisable by 3");
+        }
+        }
+        
+        // Question # 2
+        function two(){
+            let num = prompt("Enter a nmbr to check that it is even or odd");
+        if(num % 2 === 0){
+             alert("Entered number is even");
+        }
+         else if(num % 2 !== 0){
+             alert("Entered number is odd");
+        }
+        }
+        
+        // Question # 3
+        function three(){
+            let age = prompt("Enter your age");
+        if(age > 18){
+            alert("Old enough");
+        }
+        else{
+            alert("Too young");
+        }
+        }
+        
+        // Question # 4
+        function four(){
+            let fullName = prompt("Enter your name");
+        if(fullName === "bakhtawar"){
+            alert("welcome !");
+        }
+        }
+        
+         // Question # 11
+         function eleven(){
+            let name_full = "Ali";
+        if(name_full === "Fahad"){
+            document.write("Hello Fahad !");
+        }
+        else{
+            document.write("You are not Fahad !")
+        }
+        }
+
+        // Question # 12
+        function twelve(){
+            let hour = prompt("Enter the total hours of the day that you have spent already")
+        if (hour < 18) {
+            alert("Good  day");
+        }
+        else{
+            alert("Good  evening");
+        } 
+        }
+
+        // Question # 14
+        function fourteen(){
+            let no = prompt("Enter a number to know weather it is positive , negative or zero:");
+        if (no > 0){
+            alert(`${no} is a positive number.`);
+        }
+        else if (no < 0){
+            alert(`${no} is a negative number.`);
+        } 
+        else{
+            alert("The number is zero.");
+        }
+        }
+        
+        // Question # 18
+        function eighteen(){
+            let a  = 10;
+            let b = 8;
+            console.log("10 != 8" , a != b); //true
+            }
+        </script>
+</body>
+</html>

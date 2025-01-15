@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <button onclick="one()">Question # 01</button>
+    <button onclick="two()">Question # 02</button>
+    <button onclick="three()">Question # 03</button>
+    <button onclick="four()">Question # 04</button>
+    <button onclick="five()">Question # 05</button>
+    <button onclick="six()">Question # 06</button>
+    <button onclick="seven()">Question # 07</button>
+    <button onclick="ten()">Question # 10</button>
+    <script>
+        //string
+        //Question 1
+        function one(){
+            let first_Name = prompt("Enter your first name ");
+            let second_Name = prompt("Enter your second name ");
+            let full_Name = first_Name + " " + second_Name ;
+            alert("Hello ! " + full_Name )
+            }
+        
+        //Question 2
+        function two(){
+            let favMobile = prompt("Enter your favorite mobile phone model");
+            let length = favMobile.length;
+            document.write("Your favorite mobile phone model is : " + favMobile + "<br>");
+            document.write("Length of input string : " + length);
+            }
+        
+        //Question 3
+        function three(){
+            let nationality = "Pakistani";
+            document.write("String :" + " Pakistani" + "<br>");
+            let indexOfn = nationality.indexOf("n");
+            document.write("Index of 'n' : " +  indexOfn);
+            }
+        
+        //Question 4
+        function four(){
+            let  word = "Hello World";
+            let lastindexOfL = word.lastIndexOf("l");
+            document.write("String :" + word + "<br>");
+            document.write("Last index of 'l' : " +  lastindexOfL);
+            }
+        
+        //Question 5
+        function five(){
+            let a = "3" ;
+            let b = "3" ;
+            let x = a + b; 
+            document.write("a is " + a + "<br>");
+            document.write("b is" + b + "<br>");
+            document.write("a + b  is" + x);
+            }
+        
+        //Question 6
+        function six(){
+            let c = "3" ;
+            let d = "3" ;
+            let e = c - d; 
+            document.write("c is " + c + "<br>");
+            document.write("d is " + d + "<br>");
+            document.write("c - d is " + e);
+            }
+        
+        //Question 7
+        function seven(){
+            let city = "Hyderabad";
+            document.write("City :" + " " + city );
+            let replCity = city.replace("")
+            }
+        
+        //Question 10
+        function ten(){
+            let url = prompt("Enter any url ");
+            document.write("URL :" + " " + url + "<br>")
+            let repl_url = url.replace("http://", " " ).replace("www.", " ");
+            document.write("Domain :" + " " + repl_url);
+            }
+            </script>
+</body>
+</html>
+

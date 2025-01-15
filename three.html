@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="one()">Question # 01</button>
+    <button onclick="two()">Question # 02</button>
+    <button onclick="three()">Question # 03</button>
+    <button onclick="four()">Question # 04</button>
+    <button onclick="five()">Question # 05</button>
+    <button onclick="nine()">Question # 09</button>
+    <button onclick="ten()">Question # 10</button>
+    <button onclick="eleven()">Question # 11</button>
+    <button onclick="seventeen()">Question # 17</button>
+    <button onclick="nineteen()">Question # 19</button>
+    <button onclick="twenty()">Question # 20</button>
+    <script>
+        //For Loop
+        //Question 1
+        function one(){
+            let hello ="Hello World ";
+            for(let i = 0 ; i < 5 ; i++){
+            document.write(hello + "<br>");
+            }
+            }
+        
+        //Question 2
+        function two(){
+            for(let i = 1 ; i <=10 ; i++){
+            document.write(i + "<br>");
+            }
+            }
+        
+        //Question 3
+        function three(){
+            let table_Numb =prompt("Enter the number to print the table: ");
+            let table_Length =prompt("Enter the length of the table: ");
+            document.write(`Multiplication Table of ${table_Numb}` + "<br>");
+            for (let i = 1; i <= table_Length; i++) {
+                document.write(`${table_Numb} x ${i} = ${table_Numb * i}`+ "<br>");
+            } 
+            }
+        
+        //Question 4
+        function four(){
+            let mobiles =["Nokia", "Samsung", "Apple", "Sony", "Huawei"];
+            for(let i = 0 ; i < mobiles.length ; i++){
+            document.write(mobiles[i]  + "<br>");
+            }
+            }
+        
+        //Question 5
+        function five(){
+            let fruits = ["apple", "mango", "banana", "orange", "strawberry" ];
+            for (let i = 0 ; i < fruits.length ; i++) {
+                document.write(fruits[i] + "<br>");
+            }
+            for (let i = 0; i < fruits.length; i++) {
+                document.write(`Element at index ${i} is ${fruits[i]}` + "<br>");
+            }
+            }
+        
+        //Question 9
+        function nine(){
+            let dig = [24, 53, 78, 91, 12]
+            document.write("Array items :" + dig + "<br>")
+            let big = Math.max(...dig);
+            document.write(`The largest number is ${big}`);
+            }
+    
+        //Question 10
+        function ten(){
+            let digi = [24, 53, 78, 91, 12]
+            document.write("Array items :" + digi + "<br>")
+            let short = Math.min(...digi);
+            document.write(`The largest number is ${short}`);
+            }
+        
+        //Question 11
+        function eleven(){
+            let digits = [24, 53, 78, 91, 12];
+            let small = Math.min(...digits);
+            let large = Math.max(...digits);
+            document.write(`Array items: ${digits.join(",")}`+ "<br>");
+            document.write(`The smallest number is ${small}`+ "<br>");
+            document.write(`The largest number is ${large}`);
+            }
+        
+        // Question 17
+        function seventeen(){
+            for (let i = 0; i <= 20; i++) {
+            if (i % 2 === 0) {
+                document.write(`${i} is even`);
+            } else {
+                document.write(`${i} is odd`);
+            }
+            }
+            }
+        
+        //Question 19
+        function nineteen(){
+            let Stars = 7; 
+            for (let i = Stars; i > 0; i--) {
+                document.write("*".repeat(i) + "<br>");
+            }
+            }
+        
+        //Question 20
+        function twenty(){
+        //a
+    
+        //b
+          
+        //c
+        let Star = 5; 
+            for (let i = Star; i > 0; i--) {
+                document.write("*".repeat(i) + "<br>");
+            }
+        }
+            </script>
+</body>
+</html>
