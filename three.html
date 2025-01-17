@@ -112,14 +112,27 @@
         //Question 20
         function twenty(){
         //a
+        let nn = 4;
+        for(let i = 0; i < nn ; i++){
+            document.write("*".repeat(7) + "<br>")
+        }
     
         //b
-          
-        //c
-        let Star = 5; 
-            for (let i = Star; i > 0; i--) {
+        let Sta = 5; 
+            for (let i = Sta; i > 0; i--) {
                 document.write("*".repeat(i) + "<br>");
             }
+        //c
+
+        let lines =5;
+        let pattern = "";
+            for (let i = 1; i <= lines; i++) {
+            for (let j = 1; j <= i; j++) {
+             pattern += "*";
+        }
+        pattern += "\n";
+        }
+        document.write("<pre>" + pattern + "</pre>");
         }
             </script>
 </body>
